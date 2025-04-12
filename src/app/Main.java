@@ -8,5 +8,9 @@ public class Main {
 
             }
         };
+
+        StringManipulator stringManipulator = str -> str.toUpperCase();
+        String result = stringManipulator.convertToUpperCase("cat");
+        System.out.println(result);
     }
 }
