@@ -1,6 +1,8 @@
 package app;
 
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +18,7 @@ public class Main {
         System.out.println(result);
 
         Function<String, Integer> result2 = StringListProcessor::countUppercase;
+        Supplier<Integer> randomNum = () -> ThreadLocalRandom.current().nextInt(1,100);
 
     }
 }
