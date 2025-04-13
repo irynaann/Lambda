@@ -1,6 +1,6 @@
 package app;
 
-import java.util.concurrent.ThreadLocalRandom;
+
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -27,7 +27,7 @@ public class Main {
         int upperCaseSum = result2.apply("BaBy");
         System.out.println("3) " + upperCaseSum);
 
-        Supplier<Integer> randomNum = () -> generateRandomNumber(1,100);
+        Supplier<Integer> randomNum = () -> generateRandomNumber(1, 100);
         int randomNumber = randomNum.get();
         System.out.println("4) " + randomNumber);
     }
